@@ -36,6 +36,7 @@ h1 {
   box-shadow: 0 0 5px #00ff00; /* 緑色の光る影 */
   background-color: #000; /* 背景は黒 */
   margin-bottom: 20px;
+  width: 580px;
 }
 
 /* チャット画面 */
