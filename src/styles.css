@@ -34,6 +34,7 @@ h1 {
   text-align: center;
   box-shadow: 0 0 5px #00ff00; /* 緑の光る影 */
   background-color: #000;
+  margin-bottom: 20px; /* 下にマージンを追加 */
 }
 
 /* チャット画面 */
@@ -54,14 +55,12 @@ h1 {
   word-wrap: break-word;
 }
 
-/* ユーザー入力のスタイル */
 .message.user::before {
   content: ">> "; /* ユーザー入力のプロンプト */
   color: #fff;
   font-weight: bold;
 }
 
-/* 長門有希の返答スタイル */
 .message.nagato::before {
   content: "YUKI.N> "; /* 長門有希のプロンプト */
   color: #00ff00; /* 緑色 */
@@ -101,49 +100,4 @@ button:hover {
 
 button:active {
   background-color: #004400; /* クリック時の色変更 */
-}
-
-/* レスポンシブ対応 */
-@media (max-width: 768px) {
-  .wrapper {
-    width: 95%; /* タブレットサイズで幅を広げる */
-  }
-
-  .chat-container {
-    height: 60vh; /* 高さを調整 */
-  }
-
-  input {
-    font-size: 14px; /* 小さい画面ではフォントサイズを調整 */
-  }
-
-  button {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 20px; /* 見出しのフォントサイズを小さく */
-  }
-
-  .chat-container {
-    height: 50vh; /* スマホ画面で高さをさらに縮める */
-    padding: 5px;
-  }
-
-  .comment-box {
-    font-size: 12px;
-    padding: 5px;
-  }
-
-  input {
-    font-size: 12px;
-    padding: 6px;
-  }
-
-  button {
-    font-size: 12px;
-    padding: 6px 8px;
-  }
 }
