@@ -11,11 +11,10 @@ body {
   padding: 20px;
 }
 
-/* 共通のコンテナ幅 */
-.container {
-  max-width: 600px; /* 幅の最大値 */
+/* 親要素（wrapper）のスタイル */
+.wrapper {
+  max-width: 600px; /* 最大幅を設定 */
   margin: 0 auto; /* 中央揃え */
-  width: 90%; /* 小さな画面では幅を90%にする */
 }
 
 /* 見出しスタイル */
@@ -29,14 +28,12 @@ h1 {
 /* コメント枠スタイル */
 .comment-box {
   border: 1px solid #00ff00; /* 緑色の枠線 */
-  color: #00ff00; /* テキストも緑色 */
+  color: #00ff00;
   font-family: "Courier New", Courier, monospace;
   padding: 10px;
   text-align: center;
-  box-shadow: 0 0 5px #00ff00; /* 緑色の光る影 */
-  background-color: #000; /* 背景は黒 */
-  margin-bottom: 20px;
-  width: 580px;
+  box-shadow: 0 0 5px #00ff00; /* 緑の光る影 */
+  background-color: #000;
 }
 
 /* チャット画面 */
@@ -108,12 +105,12 @@ button:active {
 
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
-  .container {
-    width: 95%; /* 画面幅に合わせて広げる */
+  .wrapper {
+    width: 95%; /* タブレットサイズで幅を広げる */
   }
 
   .chat-container {
-    height: 60vh; /* 高さを縮める */
+    height: 60vh; /* 高さを調整 */
   }
 
   input {
@@ -121,32 +118,32 @@ button:active {
   }
 
   button {
-    font-size: 14px; /* ボタンのフォントサイズも調整 */
+    font-size: 14px;
   }
 }
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 20px; /* 見出しを小さくする */
+    font-size: 20px; /* 見出しのフォントサイズを小さく */
   }
 
   .chat-container {
-    height: 50vh; /* 高さをさらに縮める */
-    padding: 5px; /* パディングを減らす */
+    height: 50vh; /* スマホ画面で高さをさらに縮める */
+    padding: 5px;
   }
 
   .comment-box {
-    font-size: 12px; /* コメントのフォントサイズを小さく */
-    padding: 5px; /* パディングを調整 */
+    font-size: 12px;
+    padding: 5px;
   }
 
   input {
-    font-size: 12px; /* 入力欄のフォントを小さく */
-    padding: 6px; /* パディングを減らす */
+    font-size: 12px;
+    padding: 6px;
   }
 
   button {
-    font-size: 12px; /* ボタンのフォントサイズも小さく */
-    padding: 6px 8px; /* パディングを調整 */
+    font-size: 12px;
+    padding: 6px 8px;
   }
 }
